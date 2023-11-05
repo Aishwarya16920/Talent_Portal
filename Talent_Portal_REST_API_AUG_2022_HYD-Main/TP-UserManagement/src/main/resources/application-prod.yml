@@ -1,0 +1,25 @@
+server:
+  port: 4002
+spring:
+   datasource:
+      url: jdbc:mysql://jfs-db-instance.caphdu3k4fcr.us-east-1.rds.amazonaws.com:3306/tp_users
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: R00t$#21Db
+   Jpa:
+      hibernate.ddl-auto: update
+      
+   Security:
+      user:
+         name: User
+         password: Temp1234
+   
+   mvc:
+     pathmatch:
+       matching-strategy: ant-path-matcher
+   application:
+     name: user-talentportal
+eureka:
+   instance:
+      prefer-ip-address: true
+      hostname: localhost
